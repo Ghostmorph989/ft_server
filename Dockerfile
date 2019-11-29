@@ -44,7 +44,7 @@ COPY	src/self-signed.conf /etc/nginx/snippets/
 RUN		chown -R www-data:www-data /var/www/html/wordpress
 
 #Copy Files 
-COPY	start.sh	. 
+COPY	src/start.sh	. 
 COPY	src/default /etc/nginx/sites-available
 COPY	src/privileges.sql /var/www/html/phpmyadmin/
 
